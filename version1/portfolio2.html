@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="portfolio2_style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+
+  <title>adam_hill.wd</title>
+</head>
+<body>
+  <!-- top fake terminal bar -->
+  <header>
+    <i id = "red" class="fa fa-circle" aria-hidden="true"></i>
+    <i id="yellow" class="fa fa-circle" aria-hidden="true"></i>
+    <i id="green" class="fa fa-circle" aria-hidden="true"></i>
+    <img src="folder.png" alt="little folder" />
+    portfolio_site -- -bash -- 80x24
+  </header>
+
+
+  <!-- promt and ls line -->
+  <div id="statusline">
+    <p>Adams-Macbook-Pro:portfolio_site Adam$ ls</p>
+  </div>
+
+
+  <!-- nav stuff -->
+
+  <!--about me-->
+  <div class="dropdown1">
+    <p id="aboutme">about.me</p>
+    <section class="dropdowncontent" id="left">
+      <p>Adam Hill <br>
+        Student @Wyncode: Ft. Lauderdale, FL <br>
+        Aspiring Web Developer
+      </p>
+      <img src="HillAdam.jpg"/>
+    </section>
+  </div>
+
+  <!--experience-->
+  <div class="dropdown2">
+    <a id="experience" href="https://docs.google.com/document/d/18vwCmxOd6mm9uctzxATqfBLRQ7xJxShztITMFzzLA4M/edit?usp=sharing">resume.txt</a>
+    <section class="dropdowncontent" id="mid">
+      <p>
+        Currently learning Ruby/Rails/HTML/CSS/JS<br>
+        High School Mathematics Educator: 3 years<br>
+        BBA in Finance: UNF<br>
+      </p>
+    </section>
+  </div>
+
+  <!--connect-->
+  <div class="dropdown3">
+    <p id="connect">connecting...</p>
+    <section class="dropdowncontent" id="right">
+      <ul>
+        <li>
+          <a href="https://github.com/ahill0017" target="_blank"> GitHub </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/adam-hill-37741b123?trk=hp-identity-name" target="_blank"> LinkedIn </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/Kirbilot" target="_blank"> Twitter </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/adam.hill.98837399" target="_blank"> Facebook </a>
+        </li>
+
+      </ul>
+      <span id="contact"> contact_info = {<br>cell => 321-394-6316,<br> email => enjoilif3@gmail.com } </span>
+    </section>
+  </div>
+
+  <!-- fake terminal prompt-->
+  <p id="prompt">
+    Adams-Macbook-Pro:portfolio_site Adam$ <span class="blink"> > </span>
+  </p>
+</body>
+</html>

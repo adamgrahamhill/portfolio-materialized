@@ -1,0 +1,198 @@
+body {
+  background-color: #050506;
+}
+
+p {
+  font-family: Monaco;
+  color: lime;
+}
+/* fake terminal bar styling /////////////////*/
+/* fake terminal bar styling ////////////////*/
+/* fake terminal bar styling ///////////////*/
+
+header {
+  height: 1.5em;
+  width: 100%;
+  background-color: #F6F6F6;
+  text-align: center;
+}
+header i , header img {
+  padding-top: .2em;
+}
+#red {
+  color:rgb(253, 90, 86);
+  float:left;
+  margin-left: 0.7em;
+  margin-right: 0.4em;
+}
+#yellow {
+  color: rgb(253, 193, 61);
+  float:left;
+  margin-right: 0.4em;
+}
+#green {
+  color: rgb(23, 197, 67);
+  float:left;
+}
+#statusline {
+  height: 5%;
+  width: 100%;
+  color: lime;
+  font-size: 90%;
+}
+/* profile pic////////////////////////////////*/
+/* profile pic////////////////////////////////*/
+/* profile pic////////////////////////////////*/
+/* profile pic////////////////////////////////*/
+#left > img {
+  max-width: 50%;
+  transition-property: border-color;
+  transition-duration: 2s;
+  transition-timing-function:ease-out;
+  border-radius: 5%;
+  border: 0.15em solid;
+  border-color: #222;
+}
+#left > img:hover {
+  border-color: #1DA1F2;
+}
+
+
+ /*resume link and effects ///////////////*/
+ /*resume link and effects ///////////////*/
+ /*resume link and effects ///////////////*/
+ /*resume link and effects ///////////////*/
+#experience {
+  font-family: Monaco, sans-serif;
+  text-decoration: underline;
+  color: lime;
+  transition-property: color, text-decoration;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+#experience:hover {
+  color:#1DA1F2;
+  text-decoration: overline;
+}
+/* link styling ///////////////////////////////*/
+/* link styling ////////////////////////////////*/
+/* link styling ///////////////////////////////*/
+li {
+  color: lime;
+  font-family: Monaco;
+  margin: 1em 0 1em 6em;
+  list-style-type: none;
+  font-size: 120%;
+  text-align: left;
+}
+a {
+  text-decoration: underline;
+  transition-property:color;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+  color: #222;
+}
+
+a:hover {
+  color: lime;
+}
+a:active {
+  color: purple;
+}
+
+
+/* Hides and Revel text transitions main segments /////*/
+/* Hides and Revel text transitions main segments /////*/
+/* Hides and Revel text transitions main segments /////*/
+/* Hides and Revel text transitions main segments /////*/
+.dropdown1, .dropdown2, .dropdown3 {
+  float:left;
+  width: 33%;
+  text-align: center;
+  line-height: 2.5em;
+}
+.dropdowncontent  p{
+  /*display: none;*/
+  color: #222;
+  transition-property: color;
+  transition-duration: 3s;
+  transition-timing-function: ease-out;
+}
+.dropdowncontent  p:hover  {
+  /*display:inline-block;*/
+  color: lime;
+}
+.dropdown2:hover .dropdowncontent  {
+  /*display:inline-block;*/
+}
+.dropdown3:hover .dropdowncontent  {
+  /*display:inline-block;*/
+}
+
+/*contact info/////////////////////////////*/
+/*contact info/////////////////////////////*/
+/*contact info/////////////////////////////*/
+/*contact info/////////////////////////////*/
+#contact {
+  font-size: 70%;
+  color: lime;
+  position: fixed;
+  bottom: 1em;
+  right: 2em;
+}
+/* blinky prompt, thank you interweb //////////////*/
+/* blinky prompt, thank you interweb //////////////*/
+/* blinky prompt, thank you interweb //////////////*/
+/* http://visualidiot.com/articles/css3 //////////*/
+/* blinky prompt, thank you interweb //////////////*/
+#prompt {
+  color: lime;
+  clear:both;
+  position: absolute;
+  bottom: 0;
+}
+
+.blink {
+  -webkit-animation: blink 1.75s linear infinite;
+  -moz-animation: blink 1.75s linear infinite;
+  -ms-animation: blink 1.75s linear infinite;
+  -o-animation: blink 1.75s linear infinite;
+  animation: blink 1.75s linear infinite;
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@-moz-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@-ms-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@-o-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* @end */

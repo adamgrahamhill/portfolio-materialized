@@ -1,0 +1,131 @@
+body {
+  background-color: #050506;
+}
+header {
+  height: 5%;
+  width: 100%;
+  background-color: #F6F6F6;
+  text-align: center;
+}
+nav {
+  height: 5%;
+  width: 100%;
+}
+li {
+  color: lime;
+  display: inline;
+  font-family: Monaco;
+  margin:0 8em;
+}
+#statusline {
+  height: 5%;
+  width: 100%;
+  color: lime;
+}
+#left {
+  color: lime;
+  height: 85%;
+  width: 33%;
+  float: left;
+}
+#mid {
+  color: lime;
+  height: 85%;
+  width: 33%;
+  float:left;
+}
+#right {
+  color: lime;
+  height: 85%;
+  width: 33%;
+  float: left;
+}
+
+#red {
+  color: red;
+  float:left;
+  margin-left: 0.7em;
+  margin-right: 0.4em;
+}
+#yellow {
+  color: yellow;
+  float:left;
+  margin-right: 0.4em;
+}
+#green {
+  color: green;
+  float:left;
+}
+p {
+  font-family: Monaco;
+}
+
+#prompt {
+  color: lime;
+  clear:both;
+}
+/* link styling */
+/* link styling */
+/* link styling */
+a {
+  text-decoration: none;
+  color: lime;
+}
+
+a:hover {
+  color: green;
+}
+a:active {
+  text-decoration: line-through;
+}
+
+.dropdowncontent {
+  display: none;
+}
+ .dropdown:hover .dropdowncontent  {
+  display:inline-block;
+}
+.blink {
+    -webkit-animation: blink 1.75s linear infinite;
+    -moz-animation: blink 1.75s linear infinite;
+    -ms-animation: blink 1.75s linear infinite;
+    -o-animation: blink 1.75s linear infinite;
+    animation: blink 1.75s linear infinite;
+}
+
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-ms-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-o-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* @end */
