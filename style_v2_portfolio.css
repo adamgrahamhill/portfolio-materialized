@@ -1,0 +1,21 @@
+header {
+  height: 1.5em;
+  width: 100%;
+  background-color: #F6F6F6;
+  text-align: center;
+}
+#red {
+  color:rgb(253, 90, 86);
+  float:left;
+  margin-left: 0.7em;
+  margin-right: 0.4em;
+}
+#yellow {
+  color: rgb(253, 193, 61);
+  float:left;
+  margin-right: 0.4em;
+}
+#green {
+  color: rgb(23, 197, 67);
+  float:left;
+}
