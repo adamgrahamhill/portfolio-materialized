@@ -16,38 +16,47 @@
 </head>
 <body class="grey darken-4">
 	<!-- top fake terminal bar -->
+	<!-- top fake terminal bar -->
 	<header>
-		<i id = "red" class="fa fa-circle" aria-hidden="true"></i>
-		<i id="yellow" class="fa fa-circle" aria-hidden="true"></i>
-		<i id="green" class="fa fa-circle" aria-hidden="true"></i>
-		<img src="./version1/folder.png" alt="little folder" />
-		portfolio_site -- -bash -- 80x24
+		<div id="tb-buttons">
+			<i id = "red" class="fa fa-circle" aria-hidden="true"></i>
+			<i id="yellow" class="fa fa-circle" aria-hidden="true"></i>
+			<i id="green" class="fa fa-circle" aria-hidden="true"></i>
+		</div>
+		<div id="tb-central-content">
+			<img src="./version1/folder.png" alt="little folder" />
+			<p>portfolio_site -- -bash -- 80x24</p>
+		</div>
 	</header>
-	<div id="top-status-line">
+	<!-- Top status line -->
+	<!-- Top status line -->
+	<div id="top-status-line" class="light-green-text text-accent-3">
 		<p>Adams-Macbook-Pro:portfolio_site Adam$ ls</p>
 	</div>
+	<!-- File list popout -->
+	<!-- File list popout -->
 	<section id="files-list">
 		<div id="about">
-			<ul class="collapsible" data-collapsible="accordion">
+			<ul class="collapsible popout" data-collapsible="accordion">
 				<li>
-					<div class="collapsible-header">about.me</div>
-					<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+					<div class="collapsible-header grey darken-4 light-green-text text-accent-3">about.me</div>
+					<div class="collapsible-body light-green-text text-accent-3"><p>Lorem ipsum dolor sit amet.</p></div>
 				</li>
 			</ul>
 		</div>
 		<div id="resume">
-			<ul class="collapsible" data-collapsible="accordion">
+			<ul class="collapsible popout" data-collapsible="accordion">
 				<li>
-					<div class="collapsible-header">resume.txt</div>
-					<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+					<div class="collapsible-header grey darken-4 light-green-text text-accent-3 ">resume.txt</div>
+					<div class="collapsible-body light-green-text text-accent-3"><p>Lorem ipsum dolor sit amet.</p></div>
 				</li>
 			</ul>
 		</div>
 		<div id="connect">
-			<ul class="collapsible" data-collapsible="accordion">
+			<ul class="collapsible popout" data-collapsible="accordion">
 				<li>
-					<div class="collapsible-header">connect</div>
-					<div class="collapsible-body">
+					<div class="collapsible-header grey darken-4 light-green-text text-accent-3">connect</div>
+					<div class="collapsible-body light-green-text text-accent-3">
 						<div><a href="https://github.com/adamgrahamhill">GitHub</a></div>
 						<div><a href="https://twitter.com/Kirbilot">Twitter</a></div>
 						<div><a href="https://www.linkedin.com/in/adam-hill-37741b123">LinkedIn</a></div>

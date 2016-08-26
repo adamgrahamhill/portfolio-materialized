@@ -1,21 +1,47 @@
+/** {
+  box-sizing: border-box;
+}*/
 header {
-  height: 1.5em;
-  width: 100%;
   background-color: #F6F6F6;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
 }
 #red {
   color:rgb(253, 90, 86);
-  float:left;
-  margin-left: 0.7em;
-  margin-right: 0.4em;
 }
 #yellow {
   color: rgb(253, 193, 61);
-  float:left;
-  margin-right: 0.4em;
 }
 #green {
   color: rgb(23, 197, 67);
-  float:left;
 }
+#tb-buttons {
+  flex-grow: 1;
+  /*border: 1px solid purple;*/
+}
+#tb-central-content {
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  /*border: 1px solid red;*/
+  flex-grow: 1;
+  max-height: 1.5rem;
+  border:none;
+}
+#tb-central-content img {
+  max-height: 1.2rem;
+}
+/*TOP Fake Terminal Bar**************************************/
+/*TOP Fake Terminal Bar**************************************/
+/*TOP Fake Terminal Bar**************************************/
+/*TOP Fake Terminal Bar**************************************/
+#files-list div {
+  border: none;
+}
+
+/*File List Popout *************************/
+/*File List Popout *************************/
+/*File List Popout *************************/
+/*File List Popout *************************/
+/*File List Popout *************************/
