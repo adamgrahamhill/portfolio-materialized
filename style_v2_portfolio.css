@@ -36,18 +36,36 @@ header {
 /*TOP Fake Terminal Bar**************************************/
 /*TOP Fake Terminal Bar**************************************/
 .status-line p {
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 /*Top status line*************************************/
 /*Top status line*************************************/
 /*Top status line*************************************/
-.collapsible-header, .collapsible-body, .collapsible {
+.collapsible-header, .collapsible {
   border: none;
+  padding-left: 1.5rem;
+}
+.collapsible-body {
+  border: none;
+  padding-left: 2.5rem;
+}
+.collapsible-body i {
+  font-size: 120%;
+  margin-right: 0.5rem;
 }
 .sm-div {
-  padding-left: 1rem;
+  /*padding-left: 2rem;*/
   line-height: 3rem;
 }
+/*#resume-inner{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-around;
+}*/
+/*#resume-inner div{
+  flex-grow: 1;
+}*/
 /*File List Popout *************************/
 /*File List Popout *************************/
 /*File List Popout *************************/
