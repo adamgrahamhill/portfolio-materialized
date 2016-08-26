@@ -1,6 +1,4 @@
-/** {
-  box-sizing: border-box;
-}*/
+
 header {
   background-color: #F6F6F6;
   display: flex;
@@ -36,6 +34,12 @@ header {
 /*TOP Fake Terminal Bar**************************************/
 /*TOP Fake Terminal Bar**************************************/
 /*TOP Fake Terminal Bar**************************************/
+.status-line p {
+  padding-left: 1rem;
+}
+/*Top status line*************************************/
+/*Top status line*************************************/
+/*Top status line*************************************/
 #files-list div {
   border: none;
 }
@@ -44,4 +48,57 @@ header {
 /*File List Popout *************************/
 /*File List Popout *************************/
 /*File List Popout *************************/
-/*File List Popout *************************/
+
+#bot-status-line {
+  display: flex;
+  align-items: center;
+}
+
+.blink {
+  -webkit-animation: blink 1.25s linear infinite;
+  -moz-animation: blink 1.25s linear infinite;
+  -ms-animation: blink 1.25s linear infinite;
+  -o-animation: blink 1.25s linear infinite;
+  animation: blink 1.25s linear infinite;
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@-moz-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@-ms-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@-o-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* @end */
+/*Bot-Status Line********************/
+/*Bot-Status Line********************/
+/*Bot-Status Line********************/
+/*Bot-Status Line********************/
