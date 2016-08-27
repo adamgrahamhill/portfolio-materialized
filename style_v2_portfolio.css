@@ -62,7 +62,7 @@ header {
   display: flex;
 }
 #me {
-  max-height: 15rem;
+  max-height: 12rem;
   border-radius: 20px 0px;
 }
 /*File List Popout *************************/
