@@ -72,7 +72,7 @@ header {
 
 #bot-status-line {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .blink {
