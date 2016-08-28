@@ -1,14 +1,18 @@
-$(document).ready( function(event){
-	console.log("Hola amigos!");
-	// Status line field /////////
-	// auto-select field on page load
+$(document).ready( function(){
 	var statusLine = $('#bot-status-line input')
 	statusLine.focus();
-	statusLine.select();
 	$(window).keydown(function(event){
 		statusLine.focus();
-		// statusLine.select();
-		console.log("you pressed a key!");
-
+		if (event.which === 13) {
+			var textEntered = statusLine.val().toLowerCase();
+			if (textEntered.includes("about")) {
+				$('#about-seg .collapsible-header').click();
+			} else if (textEntered.includes("resume")){
+				$('#resume-seg .collapsible-header').click();
+			} else if (textEntered.includes("connect")) {
+				$('#connect-seg .collapsible-header').click();
+			}
+			statusLine.val("");
+		}
 	})
 })
