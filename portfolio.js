@@ -15,7 +15,8 @@ $(document).ready( function(){
 				$('.fa-github').click();
 			} else if (textEntered.includes("adam_hill") || textEntered.includes("res.doc")) {
 				$('#google-docs-resume').click();
-				console.log(textEntered)
+			} else if (textEntered.includes("twitter")) {
+				$('#twitter-link').click();
 			}
 			statusLine.val("");
 		}
