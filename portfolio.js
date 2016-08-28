@@ -13,19 +13,19 @@ $(document).ready( function(){
 				$('#connect-seg .collapsible-header').click();
 			} else if (textEntered.includes("github")) {
 				$('.fa-github').click();
-			} else if (textEntered.includes("adam" || "_hill" || "res.txt")) {
+			} else if (textEntered.includes("adam_hill") || textEntered.includes("res.doc")) {
 				$('#google-docs-resume').click();
 				console.log(textEntered)
 			}
 			statusLine.val("");
 		}
 	})
-	$('#connect-seg .collapsible-header').click(function(){
+	$('#files-list').click(function(){
 
 		if ($('#connect-seg .collapsible-header').hasClass("active")) {
-			$('#connect-seg .collapsible-header').text('connect');
+			$('#connect-seg .collapsible-header').text('connecting...');
 		} else {
-			$('#connect-seg .collapsible-header').text("connecting...")
+			$('#connect-seg .collapsible-header').text("connect")
 		}
 	})
 })
