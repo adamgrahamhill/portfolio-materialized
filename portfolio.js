@@ -1,23 +1,30 @@
 $(document).ready( function(){
+	var windowDimesions = function(){
+		$('#window-width').text($(window).width());
+		$('#window-height').text($(window).height());
+	};
+	windowDimesions();
+	$(window).resize(windowDimesions);
+	// Sets terminal dimesions on page load, and updates on resize/////////////////////
 	$("#top-status").typed({
 		strings: ["Hello! Welcome to my portfolio site. <br>"
-		 +"Type the name of any section and press ENTER <br>"
-		 +" Or click on a section. "],
+		+"Type the name of any section and press ENTER <br>"
+		+" Or click on a section. "],
 		typeSpeed: 0
 	});
-	var statusLine = $('#bot-status-line input')
 	var timeStamp = function(){
 		var date = new Date();
 		return date.getHours().toString() + ":" + date.getMinutes().toString();
 	}
+	var statusLine = $('#bot-status-line input');
 	statusLine.focus();
 	$(window).keydown(function(event){
 		statusLine.focus();
 		if (event.which === 13) {
 			var textEntered = statusLine.val().toLowerCase();
 			if (textEntered.includes("about")) {
-				$('#me').css("display", "inline");
 				$('#about-seg .collapsible-header').click();
+				$('#me').css("display", "inline");
 				$('#history').text(timeStamp() +" $ " + textEntered);
 			} else if (textEntered.includes("resume")){
 				$('#resume-seg .collapsible-header').click();
