@@ -1,6 +1,5 @@
 
 header {
-  /*background-color: #F6F6F6;*/
   background-color: rgb(222, 219, 222);
   display: flex;
   align-items: center;
@@ -35,7 +34,7 @@ header {
 /*TOP Fake Terminal Bar**************************************/
 /*TOP Fake Terminal Bar**************************************/
 /*TOP Fake Terminal Bar**************************************/
-.status-line p {
+.status-line p, #history {
   padding-left: 2rem;
 }
 /*Top status line*************************************/
@@ -74,13 +73,16 @@ header {
   display: flex;
   align-items: baseline;
 }
+#bot-status-line input {
+  border: none;
+}
 
 .blink {
-  -webkit-animation: blink 1.25s linear infinite;
-  -moz-animation: blink 1.25s linear infinite;
-  -ms-animation: blink 1.25s linear infinite;
-  -o-animation: blink 1.25s linear infinite;
-  animation: blink 1.25s linear infinite;
+  -webkit-animation: blink 2s linear infinite;
+  -moz-animation: blink 2s linear infinite;
+  -ms-animation: blink 2s linear infinite;
+  -o-animation: blink 2s linear infinite;
+  animation: blink 2s linear infinite;
 }
 
 @-webkit-keyframes blink {
