@@ -8,9 +8,8 @@ $(document).ready( function(){
 	$(window).resize(windowDimesions);
 	// Typing effect on page load ////////////////////////
 	$("#top-status").typed({
-		strings: ["Hello! Welcome to my portfolio site. <br>"
-		+"Type the name of any section and press ENTER <br>"
-		+" Or click on a section. "],
+		strings: ["Hello! Welcome to my portfolio site."
+		,"Type any section name and press ENTER or click on it.<br> Type LIST for a list of commands. Have fun!"],
 		typeSpeed: 0
 	});
 	// Timestamp for use in fake terminal command log /////////////
@@ -60,9 +59,11 @@ $(document).ready( function(){
 				$('#about-seg .collapsible-header').click();
 				$('#me').css("display", "inline");
 				$('#history').text(timeStamp() +" $ " + textEntered);
-			}else {
+			} else if ("list") {
+				$('#history').text("COMMANDS: about , resume, connect, github, adam_hill, twitter, linkedin , echo , whoami , rm -rf");
+			} else  {
 				$('#history').text("-bash: " + textEntered + ": command not found");
-			}
+			} 
 			statusLine.val("");
 		}
 	});
