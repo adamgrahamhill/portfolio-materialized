@@ -1,10 +1,11 @@
 $(document).ready( function(){
-	// Sets terminal dimesions on page load, and updates on resize/////////////////////
+	// Sets terminal dimesions on page load///////////
 	var windowDimesions = function(){
 		$('#window-width').text($(window).width());
 		$('#window-height').text($(window).height());
 	};
 	windowDimesions();
+	// update dimensions on window resize //////////////
 	$(window).resize(windowDimesions);
 	// Typing effect on page load ////////////////////////
 	$("#top-status").typed({
@@ -25,7 +26,7 @@ $(document).ready( function(){
 		statusLine.focus();
 		if (event.which === 13) {
 			var textEntered = statusLine.val().toLowerCase();
-			if (textEntered.includes('rm -rf')){
+			if (textEntered.includes('rm -rf') || textEntered.includes('rm-rf')){
 				$('#history').text("PERMISSION DENIED...and...YOU DIDN'T SAY THE MAGIC WORD!" );
 				$('#history').append("<div><img src='magicword.gif'/></div>");
 			} else if (textEntered.includes("resume")){
