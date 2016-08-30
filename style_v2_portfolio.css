@@ -45,6 +45,9 @@ header {
 .status-line p, #history {
   padding-left: 2rem;
 }
+div#top-status {
+  min-height: 3rem;
+}
 /*Top status line*************************************/
 /*Top status line*************************************/
 /*Top status line*************************************/
@@ -87,11 +90,55 @@ header {
 #about-seg h4 {
   padding-left: 1.5rem;
 }
-/*File List Popout *************************/
-/*File List Popout *************************/
-/*File List Popout *************************/
-/*File List Popout *************************/
 
+/*File List Popout *************************/
+/*File List Popout *************************/
+/*File List Popout *************************/
+/*File List Popout *************************/
+.blink {
+  -webkit-animation: blink 1.75s linear infinite;
+  -moz-animation: blink 1.75s linear infinite;
+  -ms-animation: blink 1.75s linear infinite;
+  -o-animation: blink 1.75s linear infinite;
+  animation: blink 1.75s linear infinite;
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@-moz-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@-ms-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@-o-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+/*Blink animation for connecting...*/
+/*Blink animation for connecting...*/
 #bot-status-line {
   display: flex;
   align-items: baseline;
@@ -109,5 +156,9 @@ header {
 /*Bot-Status Line********************/
 /*Bot-Status Line********************/
 footer {
-
+  display: flex;
+  flex-direction: row-reverse;
+  color: #76ff03;
+  align-items: center;
+  justify-content: center;
 }

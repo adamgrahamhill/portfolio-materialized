@@ -10,7 +10,7 @@ $(document).ready( function(){
 	// Typing effect on page load ////////////////////////
 	$("#top-status").typed({
 		strings: ["Hello! Welcome to my portfolio site."
-		,"Type any section name and press ENTER or click on it.<br> Type LIST for a list of commands. Have fun!"],
+		,"Type any section name and press ENTER or click on it.<br> Type LIST for a list of commands."],
 		typeSpeed: 0
 	});
 	// Timestamp for use in fake terminal command log /////////////
