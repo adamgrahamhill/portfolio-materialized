@@ -57,7 +57,6 @@ $(document).ready( function(){
 				$('#history').text('Flynn');
 			}else if (textEntered.includes("about")) {
 				$('#about-seg .collapsible-header').click();
-				$('#me').css("display", "inline");
 				$('#history').text(timeStamp() +" $ " + textEntered);
 			} else if ("list") {
 				$('#history').text("COMMANDS: about , resume, connect, github, adam_hill, twitter, linkedin , echo , whoami , rm -rf");
@@ -67,6 +66,9 @@ $(document).ready( function(){
 			statusLine.val("");
 		}
 	});
+	// unhide image on click of about section
+	$('#about-seg .collapsible-header').click(function(){ $('#me').css("display", "inline");});
+
 	// Make connect section into blinking connection when viewed/////////
 	$('#files-list').click(function(){
 		if ($('#connect-seg .collapsible-header').hasClass("active")) {
