@@ -24,13 +24,10 @@ header {
 }
 #tb-buttons {
   flex-grow: 1;
-  /*border: 1px solid purple;*/
 }
 #tb-central-content {
   display: flex;
-  /*justify-content: center;*/
   align-items: center;
-  /*border: 1px solid red;*/
   flex-grow: 1;
   max-height: 1.5rem;
   border:none;
@@ -65,7 +62,6 @@ div#top-status {
   margin-right: 0.5rem;
 }
 .sm-div {
-  /*padding-left: 2rem;*/
   line-height: 3rem;
 }
 .about {
@@ -90,7 +86,15 @@ div#top-status {
 #about-seg h4 {
   padding-left: 1.5rem;
 }
-
+.btn {
+  background-color: black;
+  text-align: left;
+  text-transform: none;
+}
+.btn:hover {
+  background-color: black;
+  border: 1px solid white;
+}
 /*File List Popout *************************/
 /*File List Popout *************************/
 /*File List Popout *************************/
@@ -161,4 +165,7 @@ footer {
   color: #76ff03;
   align-items: center;
   justify-content: center;
+}
+footer i {
+  margin: 0 0.5rem;
 }
